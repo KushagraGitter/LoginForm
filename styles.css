@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main-container {
+  height: 100vh;
+  background-image: url('./assets/pexels-melanie-7532116 (1).jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  padding: 30px;
+  border: 1px solid whitesmoke;
+  backdrop-filter: blur(2px);
+}
+
+.floating-container {
+  border: solid 1px #ccc;
+  padding: 0 8px;
+  position: relative;
+}
+
+.floating-container input {
+  border: none;
+  font-size: 16px;
+  margin: 16px 0 10px;
+  outline: 0;
+  background: transparent;
+}
+
+.floating-container.active label {
+  transform: translate(0, 4px) scale(0.75);
+}
+
+.login-form label {
+  font-size: 16px;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(0, 16px) scale(1);
+  transition: all 0.1s ease-in-out;
+  left: 8px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login-button {
+  background: transparent;
+  outline: 0;
+  width: 400px;
+  height: 40px;
+  border: 1px solid whitesmoke;
+  font-size: 20px;
+  color: black;
+}
